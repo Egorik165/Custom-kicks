@@ -4,21 +4,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Кастомные Кроссовки</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Custom Kicks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+    }
+    h1 {
+      margin: 0.5rem 0;
+    }
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    .product p {
+      padding: 0 1rem;
+      font-size: 14px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #e60000;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Кастомные Кроссовки</h1>
-    <img src="logo.png" alt="Логотип Custom Kicks" width="200" />
+    <img src="logo.png" alt="Логотип Custom Kicks">
+    <h1>Custom Kicks</h1>
+    <p>Уникальные кастомные кроссовки — стиль, который говорит за тебя</p>
   </header>
-  <main>
-    <h2>Витрина</h2>
-    <div class="grid">
-      <div class="item">Кроссовки #1</div>
-      <div class="item">Кроссовки #2</div>
-      <div class="item">Кроссовки #3</div>
+
+  <main class="catalog">
+    <div class="product">
+      <img src="shoe1.jpg" alt="Кроссовки 1">
+      <h3>Красные огни</h3>
+      <p>Кастом с эффектом огня — выделяйся из толпы.</p>
+      <a href="https://t.me/egor_customs" class="btn">Написать в Telegram</a>
+    </div>
+    <div class="product">
+      <img src="shoe2.jpg" alt="Кроссовки 2">
+      <h3>Ледяной стиль</h3>
+      <p>Холодный блеск и чистота — твой ледяной стиль.</p>
+      <a href="https://t.me/egor_customs" class="btn">Написать в Telegram</a>
+    </div>
+    <div class="product">
+      <img src="shoe3.jpg" alt="Кроссовки 3">
+      <h3>Граффити вайб</h3>
+      <p>Уличный арт прямо на твоих ногах — будь дерзким.</p>
+      <a href="https://t.me/egor_customs" class="btn">Написать в Telegram</a>
     </div>
   </main>
+
+  <footer>
+    <p>© 2025 Custom Kicks. Все права защищены.</p>
+  </footer>
 </body>
 </html>
