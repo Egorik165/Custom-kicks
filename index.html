@@ -7,6 +7,9 @@
   <title>Custom Kicks</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -17,63 +20,64 @@
     header {
       background: #111;
       color: white;
-      padding: 1.5rem 1rem;
+      padding: 1.2rem 1rem;
       text-align: center;
     }
     header img {
-      height: 50px;
-      margin-bottom: 0.5rem;
+      width: 80px;
+      height: auto;
+      margin-bottom: 0.7rem;
     }
     h1 {
-      font-size: 1.8rem;
-      margin: 0.5rem 0;
+      font-size: 1.7rem;
+      margin: 0.3rem 0;
+    }
+    p {
+      margin: 0.2rem 0 1rem;
+      font-size: 1rem;
     }
     .catalog {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 1.5rem;
-      padding: 1.5rem 1rem;
-    }
-    @media(min-width: 600px) {
-      .catalog {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      }
+      padding: 1rem;
     }
     .product {
       background: white;
-      border-radius: 12px;
+      border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
       text-align: center;
+      padding-bottom: 1rem;
     }
     .product img {
       width: 100%;
       height: auto;
+      display: block;
     }
     .product h3 {
-      margin: 1rem 0 0.5rem;
       font-size: 1.2rem;
+      margin-top: 1rem;
     }
     .product p {
-      padding: 0 1rem;
       font-size: 0.95rem;
+      margin: 0.5rem 1rem;
       color: #555;
     }
     .btn {
-      display: inline-block;
-      margin: 1rem auto 1.5rem;
-      padding: 0.6rem 1.2rem;
-      background: #ff4d4d;
+      margin-top: 0.7rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #ff4d4d;
       color: white;
       border: none;
-      border-radius: 10px;
-      cursor: pointer;
+      border-radius: 12px;
       text-decoration: none;
       font-size: 1rem;
       font-weight: bold;
+      display: inline-block;
     }
     .btn:hover {
-      background: #e60000;
+      background-color: #d90000;
     }
     footer {
       background: #111;
@@ -81,12 +85,13 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Логотип Custom Kicks">
+    <img src="logo.png" alt="Логотип">
     <h1>Custom Kicks</h1>
     <p>Кастомные кроссовки — стиль, который говорит за тебя</p>
   </header>
