@@ -1,0 +1,22 @@
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #1e1e1e, #2e2e2e);
+  color: white;
+  padding: 20px;
+}
+header {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.item {
+  background: #444;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
