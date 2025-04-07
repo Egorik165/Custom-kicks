@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Заказ — Custom Kicks</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f8f8f8; }
+        h1 { color: #111; }
+        form { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #ccc; }
+        button { background: #111; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; }
+        a { color: #111; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← На главную</a>
+    <h1>Сделать заказ</h1>
+    <form action="https://formspree.io/f/mwkgyepd" method="POST">
+        <label>Имя</label>
+        <input type="text" name="name" required />
+
+        <label>Email или Telegram</label>
+        <input type="text" name="contact" required />
+
+        <label>Ваш заказ</label>
+        <textarea name="order" rows="5" required></textarea>
+
+        <button type="submit">Отправить заказ</button>
+    </form>
+</body>
+</html>
